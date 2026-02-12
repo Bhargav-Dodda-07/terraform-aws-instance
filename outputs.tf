@@ -4,11 +4,11 @@ output "public_ip" {
  }
 
 output "private_ip" {
-  value       = aws_instance.this.private_ip
+  value       = aws_instance.main.private_ip
   description = "private IP of the instance created"
  }
 
  output "instance_id" {
-  value = aws_instance.this.id
+  value = aws_instance.main.id
   description = "instance ID of the instance created"
  }
